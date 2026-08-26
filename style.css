@@ -12,10 +12,16 @@ body{
 
 }
 
+.botoes-inicio{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
 
 #botao-vermelho{
     color: white;
-    background-color: red;  
+    background-color: #d73943;  
     font-family:Arial, Helvetica, sans-serif;
     border-radius: 20px;
     padding: 6px;
@@ -23,21 +29,21 @@ body{
 }
 #botao-verde{
     color: white;
-    background-color: green;  
+    background-color: #719f58;  
     font-family:Arial, Helvetica, sans-serif;
-
     border-radius: 20px;
     padding: 6px;
     font-weight: bold
 }
 #botao-azul{
     color: white;
-    background-color: blue;  
+    background-color: #2683b0;  
     font-family:Arial, Helvetica, sans-serif;
-  
+
     border-radius: 20px;
-    padding: 6px;
+    padding: 9px;
     font-weight: bold
+    
 }
 
 
@@ -57,8 +63,69 @@ body{
     width: 100%;
     height: 100%;
     margin-left: 50px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.conteudo{
+    display: flex;
+    
 }
 .problemas{
     width: 50%;
+}
+.informacoes{
+    width: 50%;
 
+}
+
+.caixa-problemas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    background-color: #719f58;
+    margin:65px 70px 0 270px;
+    border-radius: 20px;
+    padding: 20px 27px;
+    justify-content: center;
+    gap: 40px;
+}
+
+.botoes-problema{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.pai-metrica {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 70px 0 270px;
+}
+
+.caixa-metrica {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #2683b0;
+    border-radius: 20px;
+    padding: 25px 27px;
+    gap: 40px;
+}
+
+.metrica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.numero {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 18px;
 }
