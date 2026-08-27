@@ -1,6 +1,7 @@
 body{
-    background-color: #1a4d2e;
-    color: white;
+    background-color: #0c4b00;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .cabecalho{
     display: flex;
@@ -15,30 +16,31 @@ body{
 .botoes-inicio{
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    margin-left: 50px;
     gap: 50px;
 }
 
 #botao-vermelho{
-    color: white;
-    background-color: #d73943;  
-    font-family:Arial, Helvetica, sans-serif;
+    color: #d73943;
+    background-color: #d739431c;
+    border-color: #d73943;
     border-radius: 20px;
     padding: 6px;
     font-weight: bold
 }
 #botao-verde{
-    color: white;
-    background-color: #719f58;  
-    font-family:Arial, Helvetica, sans-serif;
+    color: #719f58;
+    background-color: #719f5817; 
+    border-color: #335521;
+
     border-radius: 20px;
     padding: 6px;
     font-weight: bold
 }
 #botao-azul{
-    color: white;
-    background-color: #2683b0;  
-    font-family:Arial, Helvetica, sans-serif;
+    color: #2683b0;
+    background-color: #2682b01c; 
+    border-color: #2683b0;
 
     border-radius: 20px;
     padding: 9px;
@@ -51,12 +53,11 @@ body{
     color: white;
     text-decoration: none;
     margin-right: 10px;
-    font-family:Arial, Helvetica, sans-serif;
 
 }
 
 #icones{
-    width: 60;
+    width: 60px;
     height: 60px;
 }
 #imagem-rua{
@@ -79,7 +80,7 @@ body{
 }
 
 .caixa-problemas{
-    font-family: Arial, Helvetica, sans-serif;
+
     font-size: 18px;
     display: flex;
     align-items: center;
@@ -98,8 +99,9 @@ body{
 }
 
 .pai-metrica {
-    font-family: Arial, Helvetica, sans-serif;
+
     margin: 50px 70px 0 270px;
+    font-size: 19px;
 }
 
 .caixa-metrica {
@@ -129,3 +131,50 @@ body{
 .texto {
     font-size: 18px;
 }
+
+.caixa-lista-problema{
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #719f58;
+    border-radius: 20px;
+    
+    gap: 40px;
+
+
+}
+
+.caixa-lista-problema{
+    font-size: 23px;
+    line-height: 2;
+}
+
+.abaixo-da-imagem{
+    margin-left: 50px;
+    display: flex;
+    gap: 18px;
+}
+
+.abaixo-agosto{
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botoes-agosto{
+    margin-top: 7px;
+    color: white;
+    background-color: #1a4d2e;  
+
+
+    border-radius: 15px;
+    padding: 9px;
+    font-weight: bold
+}
+
+#listas{
+    margin-right: 34px;
+}
+
+
+ 
