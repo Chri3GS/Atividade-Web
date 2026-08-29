@@ -213,7 +213,6 @@ body{
 .class-pai-inicio{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 40px;
 }
 .caixa-icones{
@@ -258,13 +257,13 @@ body{
 .filha-1{
     border-radius: 20px;
     padding: 20px;
-    margin: 5px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 .filha-2{
     padding: 20px;
     border-radius: 20px;
-    margin: 90px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
