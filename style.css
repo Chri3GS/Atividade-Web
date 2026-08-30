@@ -421,7 +421,6 @@ nav {
 
 /*ÁREA DE EXIBIÇÃO DE IMAGENS COM OS ÚLTIMOS PROBLEMAS*/
 .class-pai-inicio {
-    display: flex;
     justify-content: center;
     gap: 40px;
 }
@@ -648,6 +647,7 @@ nav {
 /*PÁGINA FINAL - NOSSO OBJETIVO*/
 
 #objetivo {
+    text-align: center;
     font-size: 45px;
 }
 
@@ -655,7 +655,7 @@ nav {
     text-align: justify;
     justify-content: center;
     align-items: center;
-    margin: 70px;
+    margin: 40px;
 
 }
 
