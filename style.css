@@ -1,13 +1,16 @@
-body{
+/* CONFIGURAÇÃO GERAL DO ARQUIVO */
+body {
     margin: 0;
     padding: 0;
     background-color: #fdfdfd;
     color: rgb(3, 3, 3);
     font-family: Arial, Helvetica, sans-serif;
 }
-.cabecalho{
-    width: 100%;
-    background-color: #719f58;
+
+/* ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO*/
+nav {
+    max-width: 100%;
+    background: linear-gradient(to top, #719f58, #116600);
 }
 
 .conteudo-cabecalho {
@@ -20,80 +23,176 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.cabecalho h2 {
-    margin: 0;
-    font-size: 25px;
-}
 
+/*ESTILIZAÇÃO DA LOGO E NOME DO SITE*/
 .grupo-logo {
     display: flex;
     align-items: center;
     gap: 12px;
-}
-.grupo-logo h2 {
-    margin: 0;
-    font-size: 25px;
+    position: relative;
+    left: 35px;
+
+    h2 {
+        margin: 0;
+        font-size: 2.5vw;
+    }
+
+    img {
+        width: 65px;
+        height: 65px;
+        object-fit: contain;
+    }
 }
 
-
+/*LINKS DO CABEÇALHO: INÍCIO, CRONOGRAMA DE COLETA E FAÇA SUA PARTE*/
 .grupo-links {
     display: flex;
     align-items: center;
     gap: 70px;
 }
 
-
-#logo-icone {
-    width: 55px;
-    height: 55px;
-    object-fit: contain;
-}
 .links {
     color: white;
     text-decoration: none;
     font-size: 17px;
+    display: inline-block;
+    transition: all 0.2s ease;
 }
+
 .links:hover {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
-#icones{
-    width: 60px;
-    height: 60px;
-    
-}
-.icone-cabecalho {
-    border-radius: 10px;
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-}
-
-.conteudo{
-    display: flex;
-    
-}
-
-
-.botoes-problema{
+/*ESTILIZAÇÃO DOS ÍCONES DO CABEÇALHO: PESQUISAR E USUÁRIO*/
+.grupo-icones {
     display: flex;
     align-items: center;
-    gap: 40px;
-
+    gap: 20px;
+    position: relative;
+    right: 60px;
 }
-.caixa-relatar{
+
+.icone-cabecalho {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.icone-cabecalho:hover {
+    transform: scale(1.1);
+}
+
+/*FIM DA ÁREA DO CABEÇALHO - MENU */
+
+/*ESTILIZAÇÃO DA ÁREA DE CONTEÚDO DA PRIMEIRA PÁGINA*/
+
+/*ÁREA DE EXIBIÇÃO DE IMAGENS COM OS ÚLTIMOS PROBLEMAS*/
+.class-pai-inicio {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#img-alagamento {
+    width: 700px;
+    border-radius: 20px;
+}
+
+.grupo-botoes {
+    display: flex;
+    gap: 10px;
+}
+
+#botoes-detalhes {
+    margin: 10px 0px 80px 0px;
+    border-radius: 5px;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background-color: #03381E;
+}
+
+/*CAIXA INFERIOR DAS CAIXAS: RELATAR PROBLEMA, MÉTRICAS E ÚLTIMAS...*/
+.filha-1 {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px 0px 0px 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.filha-2 {
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px 0px 0px 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*ESTILIZAÇÃO DOS ÍCONES DO CAMPO RELATAR PROBLEMA*/
+.caixa-relatar {
     padding: 20px 45px 20px 63px;
     background: linear-gradient(to top, #719f58, #116600);
     border-radius: 15px;
     color: white;
+
+    h2 {
+        /*TÍTULO DA CAIXA RELATAR PROBLEMA*/
+        margin-bottom: 9px;
+        font-size: 25px;
+    }
+
+    p {
+        /*TÍTULO DA CAIXA RELATAR PROBLEMA*/
+        margin: 4px;
+        font-size: 19px;
+    }
 }
 
-.pai-metrica {
+.botoes-problema {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
 
-    margin: 50px 70px 0 270px;
-    font-size: 19px;
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        border-radius: 6px;
+    }
 }
 
+.caixa-icones {
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.caixa-icones:hover {
+    transform: scale(1.1);
+}
+
+.caixa-icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.linha-vertical {
+    width: 1px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#linha-horizontal {
+    margin: 19px;
+    position: relative;
+    left: -8px;
+}
+
+/*FIM DA ÁREA DE RELATAR PROBLEMA*/
+
+/*INICIO DA ESTILIZAÇÃO CAIXA DE MÉTRICAS - PRIMEIRA PÁGINA*/
 .caixa-metrica {
     display: flex;
     justify-content: space-around;
@@ -102,7 +201,6 @@ body{
     background: linear-gradient(to top, #719f58, #116600);
     border-radius: 20px;
     color: white;
-
 }
 
 .metrica {
@@ -111,7 +209,8 @@ body{
     align-items: center;
     text-align: center;
     flex: 1;
-}
+    
+    }
 
 .numero {
     font-size: 40px;
@@ -121,16 +220,25 @@ body{
 .texto {
     font-size: 18px;
 }
+/*FIM DA SEÇÃO DE MÉTRICAS - PRIMEIRA PÁGINA*/
 
-
-
-.caixa-lista-problema{
-    font-size: 23px;
-    line-height: 2;
+.reportados1 {
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 9px;
+    color: white;
+    background: linear-gradient(to top, #719f58, #116600);
+    padding: 15px 45px 20px 45px;
 }
 
+.caixa-lista li {
+    font-size: 19px;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    }
+/*FIM DA SEÇÃO DE ÚLTIMOS PROBLEMAS REPORTADOS - PRIMEIRA PÁGINA*/
 
-.botoes-agosto{
+.botoes-agosto {
     margin-top: 7px;
     color: white;
     background-color: #03381E;
@@ -139,147 +247,81 @@ body{
     font-weight: bold
 }
 
-
-.titulos{
+.titulos {
     font-size: 50px;
     margin: 0px 0px 0px 0px;
 }
 
-.segunda-secao{
-    margin: 80px 140px 0px 350px ;
-    width: 1200px;
-    gap: 50px;
-    justify-content: center; 
-    align-items: center;    
- 
- }
+/*PÁGINA 2 - OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL*/
+.segunda-secao {
+    margin: 80px 140px 0px 350px;
+    justify-content: center;
+    align-items: center;
+}
 
+.os-objetivos {
+       justify-content: center;
+    align-items: center;
+    margin: 70px 320px 0px 320px;
+}
+
+#imagem-OS {
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    height: auto;
+}
+
+/*FIM DA PÁGINA 2 - OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL*/
+
+/*PÁGINA 3 - OBJETIVO 11 - CIDADES E COMUNIDADES SUSTENTÁVEIS*/
 .ods{
     display: flex;
     gap: 50px;
-    justify-content: center; 
-    align-items: center;    
-
-
-    
-
+    justify-content: center;
+    align-items: center;
+    margin: 70px 320px 0px 320px;
 }
-#imagem-OS{
-    width: 1200px;
-    height: 600px;
 
+#ODS11 {
+    font-size: 45px;
 }
-#imagem-barco{
+
+#imagem-barco {
     margin-top: 60px;
-    width: 19%;
+    width: 30%;
     border-radius: 20px;
 }
-#ODS11{
-    font-size: 45px;
 
-}
-.texto-ods{
-    width: 800px;
-}
-.textos-menores-segunda{
+.textos-menores {
     line-height: 1.4;
     font-size: 19px;
     text-align: justify;
 }
-.textos-menores{
-    line-height: 1.4;
-    font-size: 19px;
-    text-align: justify;
-}
-#objetivo{
+
+/*FIM DA PÁGINA 3 - OBJETIVO 11 - CIDADES E COMUNIDADES SUSTENTÁVEIS*/
+
+/*PÁGINA FINAL - NOSSO OBJETIVO*/
+
+#objetivo {
     font-size: 45px;
 }
-.ultimo{
+
+.ultimo {
     text-align: justify;
-    justify-content: center; 
-    align-items: center; 
-    margin: 70px 320px 0px 320px ;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
 
 }
-#drone{
-    width: 100%;
-}
 
-.class-pai-inicio{
+#drone {
     display: flex;
     justify-content: center;
-    gap: 40px;
-}
-.caixa-icones{
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 12px;
-}
-#img-alagamento{
-    width: 700px;
-    border-radius: 20px;
-}
-.linha-vertical {
-    width: 1px;
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-.texto-relatar p {
-    margin: 4px;
-}
-#relatar-problema{
-    margin-bottom: 9px;
-}
-#linha-grande{
-    margin: 13px;
-}
-.caixa{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-.grupo-botoes {
-    display: flex;
-    gap: 10px;
+    max-width: 100%;
+    height: auto;
 
 }
-.caixa-pai-metrica{
-    background-color: #2683b0;
-}
-.filha-1{
-    border-radius: 20px;
-    padding: 20px;
-    margin: 50px 0px 0px 0px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-}
-.filha-2{
-    padding: 20px;
-    border-radius: 20px;
-    margin: 50px 0px 0px 0px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-}
 
-.reportados1{
-    margin-top: 20px;
-    border-radius: 15px;
-    padding: 9px;
-    color: white;
-    background: linear-gradient(to top, #719f58, #116600);
-    padding: 15px 45px 20px 45px;
-}
-.caixa-lista li {
-    font-size: 19px;
-    margin-bottom: 15px;
-    line-height: 1.3;
-}
-
-#botoes-detalhes{
-    margin: 10px 0px 80px 0px;
-    border-radius: 5px;
-    padding: 10px 40px 10px 40px;
-    color: white;
-    background-color: #03381E;
-}
+/*FIM DA PÁGINA*/

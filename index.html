@@ -1,162 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cuida Cidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        
+        <nav>
+            <div class="conteudo-cabecalho">
+                <div class="grupo-logo">
+                    <img src="imagens/logo cabeçalho.png" alt="Logo Cuida Cidade">
+                    <h2>Cuida Cidade</h2>
+                </div>
+
+                <div class="grupo-links">
+                    <a href="" class="links">Início</a>
+                    <a href="" class="links">Cronograma da coleta</a>
+                    <a href="" class="links">Faça sua parte</a>
+                </div>
+
+                <div class="grupo-icones">
+                    <img src="imagens/lupa cabeçalho.png" alt="Pesquisar" class="icone-cabecalho">
+                    <img src="imagens/homen cabeçalho.png" alt="Perfil" class="icone-cabecalho">
+                </div>
+
+            </div>
+        </nav>
     </header>
-    <nav class="cabecalho">
-    <div class="conteudo-cabecalho">
-        <div class="grupo-logo">
-            <img src="imagens/logo cabeçalho.png" alt="Logo Cuida Cidade" id="logo-icone">
-            <h2>Cuida Cidade</h2>
-        </div>
 
-        <div class="grupo-links">
-            <a href="" class="links">Início</a>
-            <a href="" class="links">Cronograma da coleta</a>
-            <a href="" class="links">Faça sua parte</a>
-        </div>
-
-        <div class="grupo-icones">
-            <img src="imagens/lupa cabeçalho.png" alt="Pesquisar" class="icone-cabecalho">
-            <img src="imagens/homen cabeçalho.png" alt="Perfil" class="icone-cabecalho">
-        </div>
-
-    </div>
-</nav>
-    <main>         
-        </section>
+    <main>
         <section class="class-pai-inicio">
             <div>
                 <article class="filha-1">
                     <img src="imagens/alagamento na rua.png" alt="" id="img-alagamento">
-                    
-                    <div class="caixa">
-                        <p>28 DE AGOSTO DE 2026</p>
-                        <div class="grupo-botoes">
-                            <button type="button" class="botoes-agosto">ANTES</button>
-                            <button type="button" class="botoes-agosto">DEPOIS</button>
-                        </div>
-                        
-                    </div>
-                    <div >
+
+                    <p>28 DE AGOSTO DE 2026</p>
+                    <div>
                         <h2>Desperdício de água na avenida Nambu</h2>
                         <p id="avenida-nambu">Avenida Nambu, próximo à casa de Círlene do bar</p>
                         <p>Relatado por morador. Situação que já acontece há anos, devido a torneiras e <br>
                             mangueiras deixadas abertas por moradores da própria rua....</p>
                         <button type="button" id="botoes-detalhes">VER DETALHES</button>
                     </div>
-                    
-                
+
+
                 </article>
             </div>
-            <div class="filha-2" >
+
+            <!-- CAIXA DE RELATAR PROBLEMA - PRIMEIRA PÁGINA -->
+            <div class="filha-2">
                 <div class="caixa-relatar">
-                    <h2 id="relatar-problema">REPORTAR UM PROBLEMA</h2>
-                    <div class="texto-relatar">
-                        <p >Ajude a melhorar nossa cidade</p>
-                        <p>Registre um problema em poucos cliques</p>
-                    </div>
-                    
-                    <hr id="linha-grande">
+                    <h2>REPORTAR UM PROBLEMA</h2>
+                    <p>Ajude a melhorar nossa cidade<br>Registre um problema em poucos cliques</p>
+
+                    <hr id="linha-horizontal">
                     <div class="botoes-problema">
                         <div class="caixa-icones">
-                            <img src="imagens/icone-baixar2.png" alt=""  class="icone-cabecalho">
+                            <img src="imagens/icone-baixar2.png" alt="">
                             <span>Enviar</span>
-                            
+
                         </div>
-                        <div class="linha-vertical"></div>
-                        <div class="caixa-icones" >
-                            <img src="imagens/icone-camera2.png" alt="" class="icone-cabecalho">
-                            <span>Foto</span>
-                            
-                        </div >
                         <div class="linha-vertical"></div>
                         <div class="caixa-icones">
-                            <img src="imagens/icone-loq2.png" alt="" class="icone-cabecalho">
-                            <span>Localização</span>
-                           
+                            <img src="imagens/icone-camera2.png" alt="">
+                            <span>Foto</span>
+
                         </div>
-                    
+                        <div class="linha-vertical"></div>
+                        <div class="caixa-icones">
+                            <img src="imagens/icone-loq2.png" alt="">
+                            <span>Localização</span>
+
+                        </div>
+
                     </div>
-                    
-                </div >
-                
-                    <h2>Metricas</h2>
-    
-                    <div class="caixa-metrica">
+
+                </div>
+
+                <!-- CAIXA DE MÉTRICAS - PRIMEIRA PÁGINA -->
+                <h2>Metricas</h2>
+
+                <div class="caixa-metrica">
                     <div class="metrica">
                         <span class="numero">127</span>
-                        <span >Problemas reportados</span>
+                        <span>Problemas reportados</span>
                     </div>
 
                     <div class="metrica">
                         <span class="numero">89</span>
-                        <span >Problemas resolvidos</span>
+                        <span>Problemas resolvidos</span>
                     </div>
 
                     <div class="metrica">
                         <span class="numero">38</span>
-                        <span >Aguardando <br> solução</span>
+                        <span>Aguardando<br>solução</span>
                     </div>
 
-                   
+
                 </div>
-                
+
+                <!-- CAIXA DE ÚLTIMOS PROBLEMAS REPORTADOS -->
                 <div class="reportados1">
                     <h2>ÚLTIMOS PROBLEMAS REPORTADOS</h2>
-                        <div class="caixa-lista">
-                            <ul >
-                                <li>Desperdício de água na avenida Nambu...</li>
-                                <li>Lixo acumulado em terreno baldio...</li>
-                                <li>Animal morto na beira da estrada...</li>
-                                <li>Descarte impróprio de lixo na estrada... </li>
-                                <li>Rua sem iluminação...</li> </ul>
-                        </div>
+                    <div class="caixa-lista">
+                        <ul>
+                            <li>Desperdício de água na avenida Nambu...</li>
+                            <li>Lixo acumulado em terreno baldio...</li>
+                            <li>Animal morto na beira da estrada...</li>
+                            <li>Descarte impróprio de lixo na estrada... </li>
+                            <li>Rua sem iluminação...</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- SEÇÃO 2 - SEGUNDA PÁGINA -->
         <section class="segunda-secao">
             <h1 class="titulos">Os Objetivos de Desenvolvimento Sustentável</h1>
             <div class="os-objetivos">
-                <p class="textos-menores-segunda">Trabalhar os Objetivos de Desenvolvimento Sustentável (ODS) é essencial para transformar metas globais em melhorias práticas para a vida cotidiana das pessoas. Longe de serem conceitos abstratos, essas diretrizes oferecem um roteiro claro para combater a pobreza, proteger os recursos naturais, reduzir desigualdades e incentivar o desenvolvimento econômico de forma equilibrada.</p>
+                <p class="textos-menores">Trabalhar os Objetivos de Desenvolvimento Sustentável (ODS) é
+                    essencial para transformar metas globais em melhorias práticas para a vida cotidiana das pessoas.
+                    Longe de serem conceitos abstratos, essas diretrizes oferecem um roteiro claro para combater a
+                    pobreza, proteger os recursos naturais, reduzir desigualdades e incentivar o desenvolvimento
+                    econômico de forma equilibrada.</p>
                 <img src="imagens/ODS.png" alt="" id="imagem-OS">
             </div>
         </section>
 
+        <!-- SEÇÃO 3 - TERCEIRA PÁGINA -->
         <section class="ods">
             <div>
-               <h2 id="ODS11">ODS 11</h2>
-               <div class="texto-ods">
-                    <p class="textos-menores">A ODS 11 (Cidades e Comunidades Sustentáveis) tem como princípio fundamental tornar os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis. Para um município com as características socioambientais de Apicum-Açu, onde a dinâmica urbana se integra de forma direta aos ecossistemas costeiros, estuários e manguezais da Baixada Maranhense, a gestão do espaço urbano não é apenas uma questão de infraestrutura, mas de sobrevivência econômica e preservação ambiental.
-                        No âmbito da nossa plataforma digital, a ODS 11 ganha aplicação prática através de três pilares fundamentais:</p>
+                <h2 id="ODS11">ODS 11</h2>
+                <div class="texto-ods">
+                    <p class="textos-menores">A ODS 11 (Cidades e Comunidades Sustentáveis) tem como princípio
+                        fundamental tornar os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis.
+                        Para um município com as características socioambientais de Apicum-Açu, onde a dinâmica urbana
+                        se integra de forma direta aos ecossistemas costeiros, estuários e manguezais da Baixada
+                        Maranhense, a gestão do espaço urbano não é apenas uma questão de infraestrutura, mas de
+                        sobrevivência econômica e preservação ambiental.
+                        No âmbito da nossa plataforma digital, a ODS 11 ganha aplicação prática através de três pilares
+                        fundamentais:</p>
                     <ul class="textos-menores">
-                        <li>Gestão Adequada de Resíduos Sólidos (Meta 11.6): Ao mapear rotas de coleta de lixo,, a ferramenta combate o descarte inadequado em vias públicas, terrenos e canais naturais. Em uma cidade costeira, conter o lixo urbano é o primeiro passo para evitar a poluição das águas que sustentam a pesca e a cata de mariscos.</li>
-                        <li>Transparência e Eficiência nos Serviços Urbanos: O canal direto para reportar vazamentos de água, entulhos e falhas na iluminação permite que a administração pública visualize gargalos em tempo real, priorizando manutenções com agilidade e reduzindo desperdícios de recursos públicos.</li>
-                        <li>Urbanismo Participativo e Inclusão (Meta 11.3): A plataforma descentraliza o cuidado com o município, transformando cada cidadão em um agente ativo de zeladoria. Moradores de bairros centrais ou de áreas mais afastadas passam a ter voz e acompanhamento transparente sobre as melhorias da sua rua.</li>
-                    </ul> 
-               </div>
-                
+                        <li>Gestão Adequada de Resíduos Sólidos (Meta 11.6): Ao mapear rotas de coleta de lixo,, a
+                            ferramenta combate o descarte inadequado em vias públicas, terrenos e canais naturais. Em
+                            uma cidade costeira, conter o lixo urbano é o primeiro passo para evitar a poluição das
+                            águas que sustentam a pesca e a cata de mariscos.</li>
+                        <li>Transparência e Eficiência nos Serviços Urbanos: O canal direto para reportar vazamentos de
+                            água, entulhos e falhas na iluminação permite que a administração pública visualize gargalos
+                            em tempo real, priorizando manutenções com agilidade e reduzindo desperdícios de recursos
+                            públicos.</li>
+                        <li>Urbanismo Participativo e Inclusão (Meta 11.3): A plataforma descentraliza o cuidado com o
+                            município, transformando cada cidadão em um agente ativo de zeladoria. Moradores de bairros
+                            centrais ou de áreas mais afastadas passam a ter voz e acompanhamento transparente sobre as
+                            melhorias da sua rua.</li>
+                    </ul>
+                </div>
+
             </div>
-                <img src="imagens/foto de barcos.png" alt="" id="imagem-barco">
+            <img src="imagens/foto de barcos.png" alt="" id="imagem-barco">
         </section>
+
+        <!-- SEÇÃO FINAL - ÚLTIMA PÁGINA -->
         <section class="ultimo">
             <h2 id="objetivo">Nosso objetivo</h2>
             <div>
-                <p class="textos-menores">O Cuida Cidade! nasceu a partir da realização de um trabalho acadêmico na disciplina de Desenvolvimento Web, com o propósito de transformar o conhecimento técnico em uma ferramenta prática de impacto social para Apicum-Açu, alinhada diretamente ao Objetivo de Desenvolvimento Sustentável 11 (ODS 11: Cidades e Comunidades Sustentáveis). O objetivo central da plataforma é estabelecer uma ponte direta e transparente entre os cidadãos e o poder público municipal, permitindo que a população registre ocorrências cotidianas, como acúmulo de resíduos, descarte irregular e vazamentos de água, acompanhando as resoluções em tempo real. Para a comunidade, o projeto fortalece o exercício da cidadania e promove melhorias imediatas na infraestrutura e qualidade de vida dos bairros; para o poder público, funciona como um painel estratégico que otimiza rotas de serviços urbanos, reduz custos operacionais e agiliza manutenções prioritárias; e para a cidade como um todo, consolida uma gestão urbana mais participativa, inclusiva, segura e sustentável para todos os moradores de Apicum-Açu.</p>
+                <p class="textos-menores">O Cuida Cidade! nasceu a partir da realização de um trabalho acadêmico na
+                    disciplina de Desenvolvimento Web, com o propósito de transformar o conhecimento técnico em uma
+                    ferramenta prática de impacto social para Apicum-Açu, alinhada diretamente ao Objetivo de
+                    Desenvolvimento Sustentável 11 (ODS 11: Cidades e Comunidades Sustentáveis). O objetivo central da
+                    plataforma é estabelecer uma ponte direta e transparente entre os cidadãos e o poder público
+                    municipal, permitindo que a população registre ocorrências cotidianas, como acúmulo de resíduos,
+                    descarte irregular e vazamentos de água, acompanhando as resoluções em tempo real. Para a
+                    comunidade, o projeto fortalece o exercício da cidadania e promove melhorias imediatas na
+                    infraestrutura e qualidade de vida dos bairros; para o poder público, funciona como um painel
+                    estratégico que otimiza rotas de serviços urbanos, reduz custos operacionais e agiliza manutenções
+                    prioritárias; e para a cidade como um todo, consolida uma gestão urbana mais participativa,
+                    inclusiva, segura e sustentável para todos os moradores de Apicum-Açu.</p>
 
             </div>
-            
+
         </section>
-        <img src="imagens/cidade-cima.png" alt="" id="drone">
+        <img src="imagens/Imagem_aérea.png" alt="" id="drone">
     </main>
-    
+
 </body>
+
 </html>
