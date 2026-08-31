@@ -89,7 +89,7 @@ nav {
 /*ESTILIZAÇÃO DA ÁREA DE CONTEÚDO DA PRIMEIRA PÁGINA*/
 
 /*ÁREA DE EXIBIÇÃO DE IMAGENS COM OS ÚLTIMOS PROBLEMAS*/
-.classe1 {
+.tela-inicial {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -732,7 +732,7 @@ nav {
         display: block;
         width: 100%;
         height: auto;
-        margin: 25px auto 0;
+        margin: 0 auto;
     }
 }
 /*FIM DA PÁGINA*/
