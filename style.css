@@ -84,8 +84,6 @@ nav {
     transform: scale(1.1);
 }
 
-/*FIM DA ÁREA DO CABEÇALHO - MENU */
-
 /*ESTILIZAÇÃO DA ÁREA DE CONTEÚDO DA PRIMEIRA PÁGINA*/
 
 /*ÁREA DE EXIBIÇÃO DE IMAGENS COM OS ÚLTIMOS PROBLEMAS*/
@@ -184,8 +182,6 @@ nav {
     left: -8px;
 }
 
-/*FIM DA ÁREA DE RELATAR PROBLEMA*/
-
 /*INICIO DA ESTILIZAÇÃO CAIXA DE MÉTRICAS - PRIMEIRA PÁGINA*/
 .caixa-metrica {
     display: flex;
@@ -214,7 +210,8 @@ nav {
 .texto {
     font-size: 18px;
 }
-/*FIM DA SEÇÃO DE MÉTRICAS - PRIMEIRA PÁGINA*/
+
+/*ESTILIZAÇÃO DA ÁREA DE ÚLTIMOS PROBLEMAS REPORTADOS*/
 
 .reportados1 {
     margin-top: 20px;
@@ -264,8 +261,6 @@ nav {
     margin: 0 auto;
 }
 
-/*FIM DA PÁGINA 2 - OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL*/
-
 /*PÁGINA 3 - OBJETIVO 11 - CIDADES E COMUNIDADES SUSTENTÁVEIS*/
 .ods{
     display: flex;
@@ -290,8 +285,6 @@ nav {
     font-size: 19px;
     text-align: justify;
 }
-
-/*FIM DA PÁGINA 3 - OBJETIVO 11 - CIDADES E COMUNIDADES SUSTENTÁVEIS*/
 
 /*PÁGINA FINAL - NOSSO OBJETIVO*/
 
