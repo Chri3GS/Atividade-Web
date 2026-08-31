@@ -52,7 +52,7 @@
                         <p id="avenida-nambu">Avenida Nambu, próximo à casa de Círlene do bar</p>
                         <p>Relatado por morador. Situação que já acontece há anos, devido a torneiras e <br>
                             mangueiras deixadas abertas por moradores da própria rua....</p>
-                        <button type="button" id="botoes-detalhes">VER DETALHES</button>
+                        <button type="button" class="btn">VER DETALHES</button>
                     </div>
 
 
@@ -195,7 +195,39 @@
         </section>
         <img src="imagens/Imagem_aérea.png" alt="" id="drone">
     </main>
+    <!-- Animação de numeros métricas -->
+    <script>
+    const numeros = document.querySelectorAll(".numero");
 
+    numeros.forEach((numero) => {
+        const valorFinal = Number(numero.textContent.trim());
+
+        if (Number.isNaN(valorFinal)) {
+            return;
+        }
+
+        numero.textContent = "0";
+
+        const duracao = 2000;
+        const inicio = performance.now();
+
+        function atualizar(tempoAtual) {
+            const tempoDecorrido = tempoAtual - inicio;
+            const progresso = Math.min(tempoDecorrido / duracao, 1);
+
+            const valorAtual = Math.floor(progresso * valorFinal);
+            numero.textContent = valorAtual;
+
+            if (progresso < 1) {
+                requestAnimationFrame(atualizar);
+            } else {
+                numero.textContent = valorFinal;
+            }
+        }
+
+        requestAnimationFrame(atualizar);
+    });
+</script>
 </body>
 
 </html>
